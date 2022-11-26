@@ -370,7 +370,7 @@ p {
 }
 
 /* <!-- section5  regular customers --> */
-.customers-titlle {
+.customers__titlle {
   margin-bottom: 50px;
   margin-top: 0px;
   font-size: 36px;
@@ -378,11 +378,11 @@ p {
   color: var(--main-text-color);
   text-align: center;
 }
-.customers-list {
+.customers__list {
   display: flex;
   gap: 30px;
 }
-.customers-link {
+.customers__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -393,12 +393,12 @@ p {
   color: var(--icon-color);
   transition: color 250ms var(--cubic);
 }
-.customers-link:hover,
-.customers-link:focus {
+.customers__link:hover,
+.customers__link:focus {
   color: var(--accent-color);
 }
 
-.customers-icon {
+.customers__icon {
   fill: currentColor;
 }
 
