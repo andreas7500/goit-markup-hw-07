@@ -107,6 +107,12 @@ p {
   transition: color 250ms var(--cubic);
 }
 
+.flex-card {
+  display: flex;
+  flex-direction: row;
+  column-gap: 30px;
+}
+
 /*----------------index ---------------------------*/
 
 /* header */
@@ -151,10 +157,6 @@ p {
 .header__link:focus {
   color: var(--accent-color);
 }
-
-/* .nav {
-  margin-left: 93px;
-} */
 
 .nav__list {
   display: flex;
@@ -213,14 +215,6 @@ p {
   color: var(--accent-color);
 }
 
-/* ul header-connection  header__contact
-li header-item-connect  header__item 
-a header-mail-tel     header__link
-svg header-mail         header__icon--mail
-svg header-tel          header__icon--tel */
-
-/* main */
-
 .hero-section--overlay {
   padding: 200px 0;
   max-width: 1600px;
@@ -260,16 +254,6 @@ svg header-tel          header__icon--tel */
 
 /* section2 */
 
-.list-benefits {
-  display: flex;
-  flex-direction: row;
-  column-gap: 30px;
-}
-
-.list-benefits .item-benefits {
-  flex-basis: calc((100%-30px * 3) / 4);
-}
-
 .benefits-cart {
   display: flex;
   align-items: center;
@@ -280,7 +264,7 @@ svg header-tel          header__icon--tel */
   background-color: var(--buttons-port-color);
 }
 
-.title-benefits {
+.benefits__title {
   margin-bottom: 10px;
   font-weight: 700;
   line-height: 1.14;
@@ -289,17 +273,17 @@ svg header-tel          header__icon--tel */
   color: var(--main-text-color);
 }
 
-.text-benefits {
+.benefits__text {
   line-height: 1.71;
   color: var(--owner-text-color);
 }
 /* section3 */
 
-.section-work {
+.work {
   padding-top: 0;
 }
-.title-work,
-.title-team {
+.work__title,
+.team__title {
   margin-bottom: 50px;
   margin-top: 0px;
   font-weight: 700;
@@ -307,16 +291,12 @@ svg header-tel          header__icon--tel */
   line-height: 1.16;
   text-align: center;
 }
-.list-work {
-  display: flex;
-  flex-direction: row;
-  column-gap: 30px;
-}
-.item-work {
+
+.work__item {
   position: relative;
 }
 
-.minioverlay-text {
+.work__text {
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -332,31 +312,26 @@ svg header-tel          header__icon--tel */
 }
 
 /* section4 */
-.section-team {
+.team {
   background: var(--buttons-port-color);
 }
 
-.list-team {
-  display: flex;
-  flex-direction: row;
-  column-gap: 30px;
-}
-.list-team .item-team {
+.team__item {
   background: var(--background-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-.card-team {
+.team__card {
   padding: 30px 0;
 }
-.list-soc {
+.team__list-card {
   margin: auto;
   display: flex;
   justify-content: center;
   gap: 10px;
 }
-.link-team {
+.team__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -368,16 +343,16 @@ svg header-tel          header__icon--tel */
   transition: background-color 250ms var(--cubic), color 250ms var(--cubic);
 }
 
-.link-team:hover,
-.link-team:focus {
+.team__link:hover,
+.team__link:focus {
   background-color: var(--accent-color);
   color: var(--background-color);
 }
-.soc-link {
+.team__icon {
   fill: currentColor;
 }
 
-.title-team-small {
+.team__title-small {
   margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
@@ -385,7 +360,7 @@ svg header-tel          header__icon--tel */
   text-align: center;
 }
 
-.text-team {
+.team__text {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
@@ -512,7 +487,7 @@ svg header-tel          header__icon--tel */
   gap: 10px;
 }
 
-.footer-icon {
+.footer__link-card {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -524,13 +499,13 @@ svg header-tel          header__icon--tel */
   color: var(--background-color);
   transition: background-color 250ms var(--cubic), color 250ms var(--cubic);
 }
-.footer-icon:hover,
-.footer-icon:focus {
+.footer__link-card:hover,
+.footer__link-card:focus {
   background-color: var(--accent-color);
   color: var(--background-color);
 }
 
-.footer-soc-link {
+.footer-icon-soc {
   fill: currentColor;
 }
 
@@ -548,7 +523,7 @@ svg header-tel          header__icon--tel */
   width: 358px;
   height: 50px;
   background-color: var(--background-footer-color);
-  color: #ffffff;
+  color: var(--background-color);
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 }
