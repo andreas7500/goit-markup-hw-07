@@ -203,9 +203,14 @@ p {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  color: #000000;
+
   transition: color 250ms var(--cubic);
 }
+
+.header__logo--color {
+  color: #000000;
+}
+
 .logo:hover,
 .logo:focus {
   color: var(--accent-color);
@@ -404,39 +409,26 @@ p {
 
 /* footer */
 
-.footer-index {
+.footer {
   background: var(--background-footer-color);
   padding: 60px 0;
 }
 
-.footer-index .logo-footer {
+.footer .logo {
   display: inline-block;
   margin-bottom: 20px;
 }
 
-.logo-footer {
-  font-family: 'Raleway';
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+.logo__footer--color {
   color: var(--background-color);
-  transition: color 250ms var(--cubic);
 }
 
-.logo-footer-web {
-  color: var(--accent-color);
-}
-.logo-footer:hover,
-.logo-footer:focus {
-  color: var(--accent-color);
-}
-
-.footer-list {
+.address__list {
   font-style: normal;
   line-height: 1.71;
 }
 
-.footer-mail-tel {
+.address__contact {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -447,34 +439,34 @@ p {
   transition: color 250ms var(--cubic);
 }
 
-.footer-list .item-footer + .item-footer {
+.address__list .address__item + .address__item {
   margin-top: 9px;
 }
 
-.footer-link {
+.address__link {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   color: var(--background-color);
   transition: color 250ms var(--cubic);
 }
-.footer-link.link:hover,
-.footer-mail-tel:hover,
-.footer-link.link:focus,
-.footer-mail-tel:focus {
+.address__link.link:hover,
+.address__contact:hover,
+.address__link.link:focus,
+.address__contact:focus {
   color: var(--accent-color);
 }
 
-.footer-container {
+.footer__container {
   display: flex;
   align-items: baseline;
   gap: 70px;
 }
-.footer-group {
+.footer__group {
   margin-right: auto;
 }
 
-.footer-text {
+.footer__text {
   margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
@@ -482,7 +474,7 @@ p {
   text-transform: uppercase;
   color: var(--background-color);
 }
-.footer-soc {
+.footer__list {
   display: flex;
   gap: 10px;
 }
@@ -505,7 +497,7 @@ p {
   color: var(--background-color);
 }
 
-.footer-icon-soc {
+.footer__icon {
   fill: currentColor;
 }
 
