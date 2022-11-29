@@ -26,6 +26,11 @@
   letter-spacing: 0.02em;
   color: var(--owner-text-color);
   transition: color 250ms var(--cubic);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .address__list .address__item + .address__item {
@@ -38,12 +43,11 @@
   line-height: 1.71;
   color: var(--background-color);
   transition: color 250ms var(--cubic);
-}
-.address__link.link:hover,
-.address__contact:hover,
-.address__link.link:focus,
-.address__contact:focus {
-  color: var(--accent-color);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .footer__container {
@@ -79,11 +83,12 @@
   box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
   color: var(--background-color);
   transition: background-color 250ms var(--cubic), color 250ms var(--cubic);
-}
-.footer__link-card:hover,
-.footer__link-card:focus {
-  background-color: var(--accent-color);
-  color: var(--background-color);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    color: var(--background-color);
+  }
 }
 
 .footer__icon {
@@ -107,14 +112,15 @@
   color: var(--background-color);
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-}
-.footer-field::placeholder {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-  color: rgba(255, 255, 255, 0.6);
+
+  &::placeholder {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: rgba(255, 255, 255, 0.6);
+  }
 }
 
 .footer__btn {
@@ -126,12 +132,12 @@
   padding-right: 62px;
   padding-top: 0;
   padding-bottom: 0;
-}
 
-.footer__btn:hover,
-.footer__btn:focus {
-  background-color: var(--focus-btn);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  &:hover,
+  &:focus {
+    background-color: var(--focus-btn);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
 }
 
 .footer-form-icon {

@@ -768,6 +768,9 @@ p {
   -webkit-transition: color 250ms var(--cubic);
   transition: color 250ms var(--cubic);
 }
+.address__contact:hover, .address__contact:focus {
+  color: var(--accent-color);
+}
 
 .address__list .address__item + .address__item {
   margin-top: 9px;
@@ -781,11 +784,7 @@ p {
   -webkit-transition: color 250ms var(--cubic);
   transition: color 250ms var(--cubic);
 }
-
-.address__link.link:hover,
-.address__contact:hover,
-.address__link.link:focus,
-.address__contact:focus {
+.address__link:hover, .address__link:focus {
   color: var(--accent-color);
 }
 
@@ -839,9 +838,7 @@ p {
   -webkit-transition: background-color 250ms var(--cubic), color 250ms var(--cubic);
   transition: background-color 250ms var(--cubic), color 250ms var(--cubic);
 }
-
-.footer__link-card:hover,
-.footer__link-card:focus {
+.footer__link-card:hover, .footer__link-card:focus {
   background-color: var(--accent-color);
   color: var(--background-color);
 }
@@ -871,7 +868,6 @@ p {
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 }
-
 .footer-field::-webkit-input-placeholder {
   font-family: "Roboto";
   font-style: normal;
@@ -880,7 +876,6 @@ p {
   line-height: 20px;
   color: rgba(255, 255, 255, 0.6);
 }
-
 .footer-field::-moz-placeholder {
   font-family: "Roboto";
   font-style: normal;
@@ -889,7 +884,6 @@ p {
   line-height: 20px;
   color: rgba(255, 255, 255, 0.6);
 }
-
 .footer-field:-ms-input-placeholder {
   font-family: "Roboto";
   font-style: normal;
@@ -898,7 +892,6 @@ p {
   line-height: 20px;
   color: rgba(255, 255, 255, 0.6);
 }
-
 .footer-field::-ms-input-placeholder {
   font-family: "Roboto";
   font-style: normal;
@@ -907,7 +900,6 @@ p {
   line-height: 20px;
   color: rgba(255, 255, 255, 0.6);
 }
-
 .footer-field::placeholder {
   font-family: "Roboto";
   font-style: normal;
@@ -926,9 +918,7 @@ p {
   padding-top: 0;
   padding-bottom: 0;
 }
-
-.footer__btn:hover,
-.footer__btn:focus {
+.footer__btn:hover, .footer__btn:focus {
   background-color: var(--focus-btn);
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
