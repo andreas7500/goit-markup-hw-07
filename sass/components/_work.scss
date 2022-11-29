@@ -1,4 +1,8 @@
 .work {
+  @extend %section;
+}
+
+.work {
   padding-top: 0;
 }
 .work__title,

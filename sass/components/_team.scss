@@ -1,4 +1,8 @@
 .team {
+  @extend %section;
+}
+
+.team {
   background: var(--buttons-port-color);
 }
 

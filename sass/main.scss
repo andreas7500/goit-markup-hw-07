@@ -2,6 +2,7 @@
 @import './utils/veriables';
 @import './utils/visually-hidden';
 @import './utils/flex-card';
+@import './utils/placeholders';
 
 //  base style
 @import './base/base';
@@ -19,3 +20,5 @@
 @import './components/team';
 @import './components/customers';
 @import './components/footer';
+@import './components/button-block';
+@import './components/grid-porfolio';

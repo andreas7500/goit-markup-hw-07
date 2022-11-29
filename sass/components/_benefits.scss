@@ -1,3 +1,7 @@
+.benefits {
+  @extend %section;
+}
+
 .benefits-cart {
   display: flex;
   align-items: center;
