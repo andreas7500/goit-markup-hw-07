@@ -1032,8 +1032,8 @@ p {
   background: rgba(33, 150, 243, 0.9);
 }
 
-.grid_link:hover .portoverlay,
-.grid_link:focus .portoverlay {
+.grid-link:hover .portoverlay,
+.grid-link:focus .portoverlay {
   -webkit-transform: translateY(0);
           transform: translateY(0);
 }
@@ -1050,8 +1050,8 @@ p {
   color: var(--background-color);
 }
 
-.grid_link:hover,
-.grid_link:focus {
+.grid-link:hover,
+.grid-link:focus {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
