@@ -183,11 +183,7 @@ p {
   -webkit-transition: color 250ms var(--cubic);
   transition: color 250ms var(--cubic);
 }
-
-.nav__link:hover,
-.header__link:hover,
-.nav__link:focus,
-.header__link:focus {
+.header__link:hover, .header__link:focus {
   color: var(--accent-color);
 }
 
@@ -215,12 +211,14 @@ p {
   -webkit-transition: color 250ms var(--cubic);
   transition: color 250ms var(--cubic);
 }
+.nav__link:hover, .nav__link:focus {
+  color: var(--accent-color);
+}
 
 .nav__link--current {
   position: relative;
   color: var(--accent-color);
 }
-
 .nav__link--current::after {
   content: "";
   position: absolute;
@@ -244,14 +242,12 @@ p {
   -webkit-transition: color 250ms var(--cubic);
   transition: color 250ms var(--cubic);
 }
+.logo:hover, .logo:focus {
+  color: var(--accent-color);
+}
 
 .header__logo--color {
   color: var(--logo-color-text);
-}
-
-.logo:hover,
-.logo:focus {
-  color: var(--accent-color);
 }
 
 .logo__web {
@@ -292,45 +288,6 @@ p {
   padding: 10px 32px;
 }
 .hero__btn:hover, .hero__btn:focus {
-  background-color: var(--focus-btn);
-}
-
-.hero-section--overlay {
-  padding: 200px 0;
-  max-width: 1600px;
-  height: 600px;
-  margin: 0 auto;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/Img_hero.jpg);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Img_hero.jpg);
-  text-align: center;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-.hero-title {
-  margin-top: 0px;
-  margin-bottom: 30px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 696px;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--secondary-text-color);
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.hero__btn {
-  padding: 10px 32px;
-}
-
-.hero__btn:hover,
-.hero__btn:focus {
   background-color: var(--focus-btn);
 }
 
